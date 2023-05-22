@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+    <form action="" method="post">
+        {% if full_name %}
+        <p>Привет, {{full_name}}! Пароль:{{password}}. Логин:{{login}}. </p>
+        {% endif %}
+        {% if error %}
+        <p>Вы не ввели данные!!!!!</p>
+        {% endif %}
+        {% if Errors %}
+        <p>Вы не зарегистрированны!!!!!</p>
+        {% endif %}
+	</p>
+
+    </form>
+</head>
+<body>
+
+</body>
+</html>
